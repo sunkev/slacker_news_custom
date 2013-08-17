@@ -12,6 +12,12 @@ gem 'bourbon'
 # Use neat for responsive grid
 gem 'neat'
 
+# Use guard
+gem 'guard'
+
+# Use guard-livereload to automatically refresh pages when a view is modified
+gem 'guard-livereload'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
