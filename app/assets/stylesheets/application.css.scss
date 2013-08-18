@@ -1,0 +1,138 @@
+@import 'normalize';
+@import 'bourbon';
+@import 'neat';
+@import 'home';
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+$main-font: Verdana;
+$search-font:Courier;
+
+$text-color:#000000;
+$other-text-color:#828282;
+
+
+* {
+  box-sizing:border-box;
+  padding:0;
+  margin: 0;
+}
+
+body {
+  width:1164px;
+  height:1140px;
+  margin: auto;
+  font-family: $main-font;
+}
+
+.page {
+  background: #f6f6ef;
+}
+/* Navigation Bar */
+
+.navigation {
+  height:24px;
+  background: #ff6600;
+  list-style: none;
+  padding:0; 
+  margin:0px;
+    li {
+      display:inline;
+      border-right: #000000;
+      vertical-align: middle;
+      margin-bottom: 1px;
+    }
+      a {
+        text-decoration: none;
+        color:#000000;
+        font-family:$main-font;
+        font-size: 10pt;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &:active {
+        color:white;
+      }
+  }
+
+  .logo {
+    border:1px #ffffff solid;
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    margin-bottom: 0;
+  }
+
+  .login-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    li {
+      display: inline;
+      padding: 1px 0 0 12px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+.login {
+  float:right;
+  padding-right:3px;
+}
+
+/* Footer */
+
+footer {
+  height:111px;
+  background: #f6f6ef;
+}
+.footer-nav {
+  list-style: none;
+  margin:0;
+  padding-top:8px;
+  text-align: center;
+  li {
+    display: inline;
+  }
+    a {
+      text-decoration: none;
+      font-size: 8pt;
+      color:#000000;
+      &:visited {
+        color:$other-text-color;
+      }
+    }
+}
+
+form {
+  width:200px;
+  height:24px;
+  margin:auto;
+  padding-top:10px;
+}
+
+input {
+  font-family: $search-font;
+  color:$text-color;
+  font-size:10pt;
+  width:142px;
+  height:21px;
+}
+
+label {
+  font-size: 10pt;
+  color:$other-text-color;
+}
+

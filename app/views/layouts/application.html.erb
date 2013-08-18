@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SlackerNewsCustom</title>
+  <title>Slacker News</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="navigation-container">
+    <ul class="navigation">
+      <li><a href="http://ycombinator.com/"><%= image_tag "y18.gif", :class => "logo"  %></a></li>
+      <li><a href="#"><strong>Hacker News</strong></a></li>
+      <li><a href="#">new</a></li>
+      <li><a href="#">comments</a></li>
+      <li><a href="#">ask</a></li>
+      <li><a href="#">jobs</a></li>
+      <li><a href="#">submit</a></li>
+      <li class="login"><a href="#">login</a></li>
+    </ul>
+  </div>
 
-<%= yield %>
-
+  <div class="page">
+    <%= yield %>
+  </div<
+  <div class="footer-container"> 
+    <footer>
+      <hr class="horizontal-line" color="#ff6600" size="2px">
+      <div>
+      <ul class="footer-nav">
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">RSS</a></li>
+        <li><a href="#">Bookmarklet</a></li>
+        <li><a href="#">Guidelines</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">DMCA</a></li>
+        <li><a href="#">News News</a></li>
+        <li><a href="#">Feature Requests</a></li>
+        <li><a href="#">Bugs</a></li>
+        <li><a href="#">Y Combinator</a></li>
+        <li><a href="#">Apply</a></li>
+        <li><a href="#">Library</a></li>
+      </ul>
+    </div>
+    <div class="search-container">
+      <form class="search">
+        <label for="search">Search:</label>
+        <input type="text" name="search"><br>
+      </form>
+    </div>
+    </footer>
+  </div>
 </body>
 </html>
