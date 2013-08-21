@@ -1,5 +1,9 @@
 SlackerNewsCustom::Application.routes.draw do
   get "home/index"
+
+  get "comments/index"
+
+  get 'home/comments' => 'comments#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
